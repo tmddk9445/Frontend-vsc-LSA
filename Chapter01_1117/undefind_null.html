@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>undefined / null</title>
+</head>
+
+<body>
+    <script>
+        'use strict'; //엄격형으로 선언
+        let num;
+        console.log(num); // undefind
+        console.log(typeof(num)); // undefind
+
+        let obj1 = null; // 값은 없지만 공간은 있다.
+        console.log(obj1); // null
+        console.log(typeof(obj1)); // object
+
+        let obj2 = {};
+        console.log(obj2); // {} : 객체를 의미 (객체형)
+        console.log(typeof(obj2)); // object
+</script>
+
+</body>
+
+</html>

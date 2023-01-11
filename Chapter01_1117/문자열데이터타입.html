@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>변수 데이터 타입 : 문자열형</title>
+</head>
+
+<body>
+    <script>
+        'use strict'; //엄격형으로 선언
+        const num1 = 10; // 숫자형
+        const num2 = 20; 
+        const str1 = 'Hello JavaScript' // 문자열형
+        const str2 = 'Hello World' // 문자열형
+        const str3 = '100' // 문자열형
+
+        // 연산처리 작업
+        console.log(num1 + num2); // 숫자연산
+        console.log(num1 + str1); // 문자연산 (결합)
+        console.log(num1 + ""); // 문자연산 >> 값의 타입이 문자로 변경된다. (출력값은 같다.)
+        console.log(typeof(num1)); // 숫자형 
+        console.log(typeof(num1 + "")); // 문자열형
+
+        console.log(str1 + '' + str2); //문자열형 연산
+        consolg.log(`자바스크립트에서는 문자열을
+                    쌍따옴표, 따옴표로
+                    둘러싸인 문자의 집합을 의미합니다.
+                    ${num1}'`); // ${num1} 변수값(10)이 출력
+        console.log(num1 + " + " + num2 + " = " + (num1 + num2));
+        // 문자의 결합과 숫자연산
+        console.log(`${num1} + ${num2} = ${num1 + num2}`); 
+        // 백쿼터 달러 중괄호
+        // 연산결과는 문자열로 자동 변환되어 사용된다.
+</script>
+
+</body>
+
+</html>
